@@ -1,79 +1,178 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Stationery Store</title>
+    <title>MyBookStore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
         }
 
         nav {
-            background-color: #34495e;
-            padding: 10px;
+            background-color: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            padding: 18px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
         }
 
         nav a {
-            color: white;
-            margin: 15px;
             text-decoration: none;
-            font-weight: bold;
+            color: #1d1d1f;
+            margin-left: 25px;
+            font-size: 14px;
         }
 
-        section {
-            padding: 40px;
+        nav a:hover {
+            opacity: 0.6;
         }
 
-        .btn {
-            background-color: green;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            display: inline-block;
+        .hero {
+            text-align: center;
+            padding: 120px 20px 80px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #6e6e73;
             margin-top: 20px;
         }
 
-        footer {
-            background-color: #2c3e50;
+        .hero-buttons {
+            margin-top: 35px;
+        }
+
+        .btn-primary {
+            background-color: #0071e3;
             color: white;
-            padding: 20px;
-            margin-top: 30px;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 17px;
+            margin-right: 15px;
+        }
+
+        .btn-secondary {
+            color: #0071e3;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .products-section {
+            padding: 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            transition: 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .price {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: #6e6e73;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+            nav {
+                padding: 15px 20px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Welcome to My Stationery Store</h1>
-    <p>Your Trusted Second-Hand Book & Bulk Stationery Partner</p>
-</header>
-
 <nav>
-    <a href="#">Home</a>
-    <a href="book.html">Book</a>
-    <a href="#">Bulk Orders</a>
-    <a href="#">Contact</a>
+    <div><strong>MyBookStore</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="book.html">Books</a>
+        <a href="#">Bulk Orders</a>
+        <a href="#">Contact</a>
+    </div>
 </nav>
 
-<section>
-    <h2>About Our Store</h2>
-    <p>We specialize in second-hand books and bulk stationery supplies for schools and offices.</p>
+<section class="hero">
+    <h1>Store. The best way to buy books you love.</h1>
+    <p>Second-hand books and bulk stationery. Premium quality. Smart pricing.</p>
 
-    <a class="btn" href="https://wa.me/7887594999">Order on WhatsApp</a>
+    <div class="hero-buttons">
+        <a class="btn-primary" href="books.html">Shop Books</a>
+        <a class="btn-secondary" href="#">Learn more ></a>
+    </div>
+</section>
+
+<section class="products-section">
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x300" alt="Book">
+        <h3>Engineering Mathematics</h3>
+        <div class="price">From ₹250</div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x300" alt="Book">
+        <h3>Physics Textbook</h3>
+        <div class="price">From ₹300</div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x300" alt="Book">
+        <h3>School Stationery Kit</h3>
+        <div class="price">Bulk Pricing Available</div>
+    </div>
+
 </section>
 
 <footer>
-    <p>© 2026 My Stationery Store | All Rights Reserved</p>
+    © 2026 MyBookStore. Designed with simplicity.
 </footer>
 
 </body>
