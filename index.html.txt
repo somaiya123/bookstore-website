@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bookstore</title>
+</head>
+<body>
+
+    <h1>Welcome to My Stationery Store</h1>
+    <p>We sell second-hand books and bulk stationery.</p>
+
+</body>
+</html>
