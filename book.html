@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second-Hand Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .price {
+            color: green;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .btn {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Second-Hand Books</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x250" alt="Book">
+        <h3>Engineering Mathematics</h3>
+        <p>Condition: Good</p>
+        <p class="price">₹250</p>
+        <a class="btn" href="https://wa.me/7887594999?text=I want Engineering Mathematics Book">Order on WhatsApp</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x250" alt="Book">
+        <h3>Physics Textbook</h3>
+        <p>Condition: Excellent</p>
+        <p class="price">₹300</p>
+        <a class="btn" href="https://wa.me/7887594999?text=I want Physics Textbook">Order on WhatsApp</a>
+    </div>
+
+</div>
+
+</body>
+</html>
